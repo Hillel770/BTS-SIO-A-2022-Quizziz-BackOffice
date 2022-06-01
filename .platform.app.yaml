@@ -13,7 +13,7 @@ dependencies:
     composer/composer: '^2'
 
 relationships:
-    database: "db:mariadb"
+    database: "db:mysql"
 
 hooks:
   build: |

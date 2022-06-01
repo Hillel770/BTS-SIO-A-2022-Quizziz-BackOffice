@@ -7,10 +7,10 @@ db:
   # the CLI will return an error.
   type: mariadb:10.1
   # The disk attribute is the size of the persistent disk (in MB) allocated to the service.
-  disk: 256
+  disk: 1024
 
   configuration:
     properties:
-      max_allowed_packet: 64
+      max_allowed_packet: 128
       default_charset: utf8mb4
       default_collation: utf8mb4_unicode_ci

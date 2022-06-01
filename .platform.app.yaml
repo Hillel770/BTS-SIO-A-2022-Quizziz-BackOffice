@@ -12,6 +12,9 @@ dependencies:
   php:
     composer/composer: '^2'
 
+hooks:
+  deploy: |
+    mv .env-exemple .env
 # The configuration of app when it is exposed to the web.
 web:
   locations:

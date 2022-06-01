@@ -19,4 +19,4 @@ web:
       # The public directory of the app, relative to its root.
       root: "src"
       # The front-controller script to send non-static requests to.
-      passthru: "/home/index.php"
+      passthru: "/index.php"

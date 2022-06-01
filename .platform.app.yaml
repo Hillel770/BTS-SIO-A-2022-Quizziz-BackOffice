@@ -13,8 +13,9 @@ dependencies:
     composer/composer: '^2'
 
 web:
-  commands:
-    start: 'uwsgi --ini conf/server.ini'
+  upstream:
+    socket_family: tcp
+    protocol: http
   locations:
     "/":
       # The public directory of the app, relative to its root.

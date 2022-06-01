@@ -3,6 +3,6 @@
 # Each route describes how an incoming URL is going
 # to be processed by Platform.sh.
 
-"http://localhost:8042/":
+"https://{default}/":
   type: upstream
   upstream: "quizziz:http"

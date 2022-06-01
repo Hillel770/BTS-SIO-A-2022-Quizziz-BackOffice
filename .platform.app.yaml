@@ -14,7 +14,7 @@ dependencies:
 
 web:
   commands:
-    start: 'php -S https://{default}/ -t public'
+    start: 'uwsgi --ini conf/server.ini'
   locations:
     "/":
       # The public directory of the app, relative to its root.

@@ -11,3 +11,11 @@ type: 'php:8.0'
 dependencies:
   php:
     composer/composer: '^2'
+
+web:
+  locations:
+    "/":
+      # The public directory of the app, relative to its root.
+      root: "web"
+      # The front-controller script to send non-static requests to.
+      passthru: "/index.php"

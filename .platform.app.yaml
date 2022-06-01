@@ -14,11 +14,9 @@ dependencies:
 
 # The configuration of app when it is exposed to the web.
 web:
-  commands:
-    start: php -S https://main-bvxea6i-i2ocg6masmbgw.fr-4.platformsh.site/ -t public
   locations:
     "/":
       # The public directory of the app, relative to its root.
-      root: "web"
+      root: "home.html.twig"
       # The front-controller script to send non-static requests to.
-      passthru: "/index.php"
+      passthru: "/public/index.php"

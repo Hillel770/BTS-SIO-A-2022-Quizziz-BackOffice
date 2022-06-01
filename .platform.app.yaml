@@ -14,7 +14,7 @@ dependencies:
 
 hooks:
   deploy: |
-    mv .env-exemple .env
+    sudo mv .env-exemple .env
 # The configuration of app when it is exposed to the web.
 web:
   locations:

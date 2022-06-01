@@ -13,9 +13,11 @@ dependencies:
     composer/composer: '^2'
 
 hooks:
-  deploy: |
-    sudo mv .env-exemple .env
-# The configuration of app when it is exposed to the web.
+  build: |
+    mv .env-exemple .env
+
+
+  # The configuration of app when it is exposed to the web.
 web:
   locations:
     "/":

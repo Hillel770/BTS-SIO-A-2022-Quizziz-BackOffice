@@ -17,6 +17,6 @@ web:
   locations:
     "/":
       # The public directory of the app, relative to its root.
-      root: "home.html.twig"
+      root: "web"
       # The front-controller script to send non-static requests to.
       passthru: "/public/index.php"

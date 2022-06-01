@@ -11,6 +11,6 @@ db:
 
   configuration:
     properties:
-      max_allowed_packet: 128
+      max_allowed_packet: 100
       default_charset: utf8mb4
       default_collation: utf8mb4_unicode_ci

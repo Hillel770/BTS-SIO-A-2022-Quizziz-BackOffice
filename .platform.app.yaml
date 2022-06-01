@@ -12,13 +12,17 @@ dependencies:
   php:
     composer/composer: '^2'
 
+# The configuration of app when it is exposed to the web.
 web:
-  upstream:
-    socket_family: tcp
-    protocol: http
   locations:
     "/":
       # The public directory of the app, relative to its root.
       root: "web"
       # The front-controller script to send non-static requests to.
       passthru: "/index.php"
+
+source:
+  operations:
+    auto-update:
+      command: |
+        curl -fsS https://raw.githubusercontent.com/platformsh/source-operations/main/setup.sh | { bash /dev/fd/3 sop-autoupdate; } 3<&0
